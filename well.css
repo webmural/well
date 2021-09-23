@@ -1,0 +1,27 @@
+.dew-diy {
+  --dew-shift: filter 0ms;
+  --dew-solar: violet;
+  --dew-lunar: indigo;
+  --dew-hover: hue-rotate(-30deg);
+}
+
+html {
+  font-family: sans-serif;
+  font-size: calc(1em + 1vw + 1vh);
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 1em;
+}
+
+.pad {
+  padding: 1ex;
+}
+
+.curve {
+  border-radius: 100%;
+}
