@@ -1,0 +1,70 @@
+.dew-diy {
+  --dew-shift: filter 33ms;
+  --dew-solar: violet;
+  --dew-lunar: indigo;
+  --dew-hover: hue-rotate(-30deg);
+}
+
+@media (prefers-contrast: more) {
+  .dew-diy {
+    --dew-solar: mistyrose;
+    --dew-lunar: indigo;
+  }
+}
+
+:link {
+  box-shadow: 0 0 1em 1ex coral;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: calc(1em + 1vw + 1vh);
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1ex 0;
+  margin-block: 1ex;
+  margin-inline: 0;
+  overflow-wrap: anywhere;
+  padding: 1em;
+  min-height: calc(100vh - 2ex);
+}
+
+.eye {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.big {
+  font-size: 10ex;
+}
+
+.pad {
+  box-sizing: border-box;
+  padding: 1ex;
+}
+
+.orb {
+  border-radius: 100%;
+}
+
+@media (orientation: landscape) {
+  body {
+    border-radius: 100%;
+    filter: hue-rotate(-90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  [class] {
+    transition: none;
+  }
+}
